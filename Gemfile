@@ -11,8 +11,10 @@ gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.13'
+   gem 'sqlite3', '1.3.13'
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug',  '9.0.6', platform: :mri
+  gem 'rspec-rails', '3.7.2'
 end
 
 group :development do
