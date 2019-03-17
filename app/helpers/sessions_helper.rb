@@ -18,8 +18,7 @@ module SessionsHelper
      end
       # 現在のユーザーをログアウトする
      def log_out
-          session.delete(:userid)
+          session.delete(:user_id)
           @current_user = nil
      end
-          
 end
