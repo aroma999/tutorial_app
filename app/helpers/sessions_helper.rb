@@ -28,13 +28,13 @@ module SessionsHelper
      end
      
      #記憶しているURL（もしくはデフォルト値）にリダイレクトする
-     def redirect_back_or(default)
-         redirect_to(session[:forwarding_url] || default)
-         session.delete(:forwarding_url)
-     end
+  def redirect_back_or(default)
+    redirect_to(session[:forwarding_url] || default)
+    session.delete(:forwarding_url)
+  end
      
      #アクセスしようとしたURLを記憶しておく
-     def store_location
-         session[:forwarding_url] = request.original_url if request.get?
-     end
+  def store_location
+    session[:forwarding_url] = request.original_url if request.get?
+  end
 end
